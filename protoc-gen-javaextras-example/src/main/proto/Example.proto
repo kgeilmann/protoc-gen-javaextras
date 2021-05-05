@@ -24,7 +24,7 @@ message ExampleMessage {
   google.protobuf.Timestamp timestamp_field = 12;
 
   message Inside {
-    google.protobuf.FloatValue lats = 9;
+    google.protobuf.FloatValue float_value_inside = 9;
   }
   Inside insider = 20;
 }
