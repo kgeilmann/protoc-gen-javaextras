@@ -20,6 +20,8 @@ public class UnwrappedSetterGenerator extends ExtrasGenerator {
             "com.google.protobuf.FloatValue", float.class,
             "com.google.protobuf.Int64Value", long.class,
             "com.google.protobuf.Int32Value", int.class,
+            "com.google.protobuf.UInt64Value", long.class,
+            "com.google.protobuf.UInt32Value", int.class,
             "com.google.protobuf.BoolValue", boolean.class,
             "com.google.protobuf.StringValue", String.class
     );//@formatter:on
