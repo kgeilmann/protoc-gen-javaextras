@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package protocaddon.example;
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+option java_package = "com.github.kgeilmann.javaextras.example";
+option java_multiple_files = true;
+
+message ExampleMessage {
+  Kind kind_field = 1;
+  OtherMessage message_type_field = 2;
+
+  google.protobuf.DoubleValue double_value_field = 3;
+  google.protobuf.FloatValue float_value_field = 4;
+  google.protobuf.Int64Value int64_value_field = 5;
+  google.protobuf.UInt64Value uint64_value_field = 6;
+  google.protobuf.Int32Value int32_value_field = 7;
+  google.protobuf.UInt32Value uint32_value_field = 8;
+  google.protobuf.BoolValue bool_value_field = 9;
+  google.protobuf.BytesValue bytes_value_field = 10;
+  google.protobuf.StringValue string_value_field = 11;
+
+  google.protobuf.Timestamp timestampField = 12;
+
+  message Inside {
+    google.protobuf.FloatValue lats = 9;
+  }
+  Inside insider = 20;
+}
+
+message OtherMessage {
+  google.protobuf.Int32Value something = 1;
+}
+
+enum Kind {
+  UNSPECIFIED = 0;
+  KIND = 1;
+  OTHER_KIND = 2;
+}

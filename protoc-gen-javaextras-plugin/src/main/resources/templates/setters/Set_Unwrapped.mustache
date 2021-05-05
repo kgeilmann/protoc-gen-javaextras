@@ -1,0 +1,4 @@
+public Builder set{{fieldName}}({{unwrappedJavaType}} value) {
+    {{javaType}} wrapped = {{javaType}}.of(value);
+    return set{{fieldName}}(wrapped);
+}

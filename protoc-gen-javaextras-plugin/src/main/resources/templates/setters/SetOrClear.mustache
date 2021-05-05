@@ -1,0 +1,7 @@
+public Builder setOrClear{{fieldName}}({{javaType}} value) {
+    if (value != null) {
+        return set{{fieldName}}(value);
+    } else {
+        return clear{{fieldName}}();
+    }
+}
