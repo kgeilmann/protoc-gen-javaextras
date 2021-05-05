@@ -19,10 +19,9 @@ message ExampleMessage {
   google.protobuf.Int32Value int32_value_field = 7;
   google.protobuf.UInt32Value uint32_value_field = 8;
   google.protobuf.BoolValue bool_value_field = 9;
-  google.protobuf.BytesValue bytes_value_field = 10;
   google.protobuf.StringValue string_value_field = 11;
 
-  google.protobuf.Timestamp timestampField = 12;
+  google.protobuf.Timestamp timestamp_field = 12;
 
   message Inside {
     google.protobuf.FloatValue lats = 9;
